@@ -21,12 +21,12 @@ import javax.swing.JOptionPane;
 public class Startup {
  
     public static void main(String[] args) {
-//        ServiceQuality sQ;
-//        ServiceQuality.FAIR;
-//        BaggageServiceTipCalculator service =
-//                new BaggageServiceTipCalculator(
-//                BaggageServiceTipCalculator.sQ.FAIR,5);
-//        
+        //Food SVC calc
+        //Tip tip = new FoodServiceTipCalculator(ServiceQuality.FAIR, 5.0);
+        
+        //Bag calc
+        TipCalcAbstraction calculator = new BaggageServiceTipCalculator(ServiceQuality.FAIR, 5.0);
+        TipCalcSvc tipService = new TipCalcSvc(calculator);
+        System.out.println("Your tip is: " + tipService.getTip() + "$.");
     }
-
 }

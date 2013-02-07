@@ -8,7 +8,7 @@ package dip.lab2.student.solution1;
  *
  * @bspor
  */
-public class FoodServiceTipCalculator implements Tip {
+public class FoodServiceTipCalculator implements TipCalcAbstraction {
     //Variables
     private static final double MIN_BILL = 0.00;
     private static final String BILL_ENTRY_ERR =
